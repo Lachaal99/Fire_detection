@@ -32,9 +32,8 @@ The dataset is organized into:
 ├── FireDetection.ipynb     # Main Jupyter notebook
 ├── README.md               # Project overview (this file)
 ├── my_model.keras          # Saved trained model (best version)
-├── data/
+├── Dataset/
 │   ├── train/
-│   ├── validation/
 │   └── test/
 ```
 
@@ -43,9 +42,6 @@ The dataset is organized into:
 - **Data Augmentation** to improve generalization and prevent overfitting
 - **CNN Architecture** with:
   - Convolutional layers + MaxPooling
-  - Batch Normalization
-  - Dropout layers for regularization
-  - Kernel regularizers (L2)
 - **Callbacks**:
   - `ModelCheckpoint` to save the best model
   - `ReduceLROnPlateau` to adjust learning rate dynamically
